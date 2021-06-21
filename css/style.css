@@ -19,6 +19,9 @@ html{
              font-size: 1.5em;
 
             }
+  .img1 ,img, p {
+      float: left;
+    }
 
   .container{
 
@@ -42,7 +45,7 @@ html{
   p{
             	color: #000000;
             	font-weight: bolder;
-            	font-size:1.75em;
+            	font-size:1em;
               margin-top:2%;
               margin-bottom:2%;
             }  
@@ -52,16 +55,13 @@ html{
               text-decoration: underline;
             	color:#000000;
             	font-weight: bolder;
-            	font-size:1.5em;
+            	font-size:1em;
               margin-top:2%;
               margin-bottom:2%;
              }
-  figure{
-    width: 100%
-  }
   .imgtexto{
-             	border: 5px dashed #fff;
-              width:100%;
+              width:80%;
+              height: 60;
               }
 
   table, td,th{
@@ -103,9 +103,7 @@ html{
         max-width:70%;
      }
   .imgtexto{
-        width:100%;
-        border: 5px dashed #fff;
-              }
+        width:100%;              }
 }
 
 /* quando a tela for menor ou igual a 599px */
@@ -115,9 +113,8 @@ html{
         margin-top:150%;
      }
   .imgtexto{
-             
-          width:100%;
-          border: 5px dashed #fff;
+     width: 379;
+     height: 533;
               }
 }
 
@@ -134,7 +131,8 @@ html{
              position: relative; 
            }
   .imgtexto{
-            width: 100%;
+            width: 379;
+            height: 533;
            }
   .menu-opções{
     position: absolute;
@@ -144,7 +142,6 @@ html{
   .menu-opções ul li{
     display:inline;
     margin-left: 
-
    }
 
 }
