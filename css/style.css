@@ -9,7 +9,17 @@ html{
   	         background-color: #99ccff;
 
            }
-  header, footer{
+  header{
+
+             background-color: rgba(65,105,225);
+             padding: 3%;
+             position: absolute;
+             display: flex;
+             align-items: center;
+             font-size: 1.5em;
+
+            }
+   footer{
 
              background-color: rgba(65,105,225);
              padding: 3%;
@@ -17,11 +27,8 @@ html{
              display: flex;
              align-items: center;
              font-size: 1.5em;
-
-            }
-  .img1 ,img, p {
-      float: left;
-    }
+             width: 100%;}         
+  
 
   .container{
 
@@ -30,7 +37,72 @@ html{
               margin-right:auto;
               margin-top: 20%
             }
+  .fundo{
+    background-color: #e8f7fd;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3%;
+    font-size:  1.2em;;
+  }
+  .distancia{
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  input[type=text],select{
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block
+    border: 1px solid #008080;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  fieldset{
+    width: 95%;
+    border: 2px solid #1E90FF;
+    padding: 2%;
+  }
+  input[type=subimit] {
+    width: 100%;
+    background-color: rgb(87, 132, 230);
+    color: azure;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+#sobre{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+}
+#galeria{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+#galeria .galeria{
+  text-align: center;
+  align-items: center;
+}
+.imggaleria{
+  width: 90%;
 
+}
+#sobre .sobre{
+  align-items: center;
+  text-align: center;
+}
+.imgsobre:hover{
+  transform: rotate(180deg);
+}
+figure{
+  text-align: center;
+}
   h1{
 
              font-size:3em
@@ -62,8 +134,30 @@ html{
   .imgtexto{
               width:80%;
               height: 60;
+              text-align: center;
               }
-
+  .imgsobre{
+    width: 20%;
+    height: 20%;
+    transform: width 2s, height 2s, transform 2s;
+  }
+  .imggaleria{
+    width: 50%;
+  }
+  .item{
+   position: relative;
+   margin: 10x 0px;
+   margin-top: 10px; 
+  }
+.item::before{
+  content: '';
+  position: relative;
+  left: 0%;
+  top: 0%;
+  padding: 10px 15px;
+  background-image: url(../img/listaimg/lista.png);
+  background-repeat: no-repeat;   
+}
   table, td,th{
 
           	border: 2px  solid black;
@@ -93,8 +187,26 @@ html{
   .menu-opções{
               position: absolute;
               right: 5%;
-              top: 50%;
+              top: 0%;
+display: block;
             }
+            table{
+              width: 100%;
+            }
+
+/* quando a tela for menor ou igual a 599px */
+
+@media screen and (max-width: 599px){
+  .containder{
+        margin-top:300%;
+            }
+  .imgtexto{
+    text-align: center;
+    width: 20%;
+              }
+
+}
+
  
 /* quando a tela for maior ou igual a 600px */
 @media screen and (min-width: 600px) {
@@ -106,23 +218,24 @@ html{
         width:100%;              }
 }
 
-/* quando a tela for menor ou igual a 599px */
-
-@media screen and (max-width: 599px){
-  .containder{
-        margin-top:150%;
-     }
-  .imgtexto{
-     width: 379;
-     height: 533;
-              }
-}
 
 /* quando a tela for maior ou igual a 768px */
 @media screen and (min-width: 768px) {
   .contaider{
     margin-top:70%;
     max-width: 70%;
+   }
+   #sobre{
+     flex-direction: row;
+     flex-wrap: wrap;
+   }
+   #sobre, h3, p{
+     width: 100%;
+     text-align: center;
+   }
+   #sobre .sobre{
+     width: 25%;
+     text-align: center;
    }
    header, footer{
 
@@ -136,12 +249,22 @@ html{
            }
   .menu-opções{
     position: absolute;
-    right: 5%;
-    top: 50%;
    }
   .menu-opções ul li{
     display:inline;
     margin-left: 
+   }
+   #galeria .galeria{
+     width: 25%;
+     text-align: center;
+   }
+   #galeria{
+     flex-direction: row;
+     flex-wrap: wrap;
+   }
+   .imggaleria{
+     width: 50%;
+     display: inline;
    }
 
 }
