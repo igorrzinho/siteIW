@@ -10,24 +10,26 @@ html{
 
            }
   header{
-
+              
              background-color: rgba(65,105,225);
              padding: 3%;
              position: absolute;
              display: flex;
              align-items: center;
              font-size: 1.5em;
-
+             font-weight: bolder;
+             flex-direction: column;
             }
    footer{
 
              background-color: rgba(65,105,225);
-             padding: 3%;
-             position: relative;
+             padding: 1%;
+             position: absolute;
              display: flex;
              align-items: center;
              font-size: 1.5em;
-             width: 100%;}         
+             width: 100%;
+             font-weight: bolder;}         
   
 
   .container{
@@ -38,68 +40,70 @@ html{
               margin-top: 20%
             }
   .fundo{
-    background-color: #e8f7fd;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 3%;
-    font-size:  1.2em;;
-  }
+          background-color: #e8f7fd;
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 3%;
+          font-size:  1.2em;;
+        }
   .distancia{
-    margin-top: 2%;
-    margin-bottom: 2%;
-  }
+          margin-top: 2%;
+          margin-bottom: 2%;
+        }
   input[type=text],select{
-    width: 100%;
-    padding: 12px 20px;
-    display: inline-block
-    border: 1px solid #008080;
-    border-radius: 5px;
-    box-sizing: border-box;
-  }
+          width: 100%;
+          padding: 12px 20px;
+          display: inline-block
+          border: 1px solid #008080;
+          border-radius: 5px;
+          box-sizing: border-box;
+        }
   fieldset{
-    width: 95%;
-    border: 2px solid #1E90FF;
-    padding: 2%;
+          width: 95%;
+          border: 2px solid #1E90FF;
+          padding: 2%;
   }
   input[type=subimit] {
-    width: 100%;
-    background-color: rgb(87, 132, 230);
-    color: azure;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+          width: 100%;
+          background-color: rgb(87, 132, 230);
+          color: azure;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
   }
 #sobre{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  margin: 0 auto;
-}
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin: 0 auto;
+      }
 #galeria{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+      }
 #galeria .galeria{
-  text-align: center;
-  align-items: center;
-}
+        text-align: center;
+        align-items: center;
+      }
 .imggaleria{
-  width: 90%;
-
+      width: 90%;
+    }
+.imglogo{
+  width: 140px;
 }
 #sobre .sobre{
-  align-items: center;
-  text-align: center;
-}
+        align-items: center;
+        text-align: center;
+      }
 .imgsobre:hover{
-  transform: rotate(180deg);
-}
+              transform: rotate(180deg);
+            }
 figure{
   text-align: center;
 }
@@ -137,27 +141,27 @@ figure{
               text-align: center;
               }
   .imgsobre{
-    width: 20%;
-    height: 20%;
-    transform: width 2s, height 2s, transform 2s;
-  }
+                width: 20%;
+                height: 20%;
+                transform: width 2s, height 2s, transform 2s;
+              }
   .imggaleria{
-    width: 50%;
-  }
+             width: 50%;
+            }
   .item{
-   position: relative;
-   margin: 10x 0px;
-   margin-top: 10px; 
-  }
+               position: relative;
+               margin: 10x 0px;
+               margin-top: 10px; 
+              }
 .item::before{
-  content: '';
-  position: relative;
-  left: 0%;
-  top: 0%;
-  padding: 10px 15px;
-  background-image: url(../img/listaimg/lista.png);
-  background-repeat: no-repeat;   
-}
+              content: '';
+              position: relative;
+              left: 0%;
+              top: 0%;
+              padding: 10px 15px;
+              background-image: url(../img/listaimg/lista.png);
+              background-repeat: no-repeat;   
+            }
   table, td,th{
 
           	border: 2px  solid black;
@@ -182,29 +186,30 @@ figure{
               top: 0;
               right: 0;
               left: 0;
-              z-index: 1030
+              z-index: 1030;
             }
   .menu-opções{
-              position: absolute;
-              right: 5%;
-              top: 0%;
-display: block;
-            }
-            table{
+                text-align: center;
+              }
+  table{
               width: 100%;
             }
-
+.testeri{
+float: left;
+}
+.testepa{
+margin-left: 10px;
+}
 /* quando a tela for menor ou igual a 599px */
 
 @media screen and (max-width: 599px){
   .containder{
-        margin-top:300%;
+        margin-top:80%;
             }
   .imgtexto{
-    text-align: center;
-    width: 20%;
-              }
-
+        text-align: center;
+        width: 20%;
+                  }
 }
 
  
@@ -222,21 +227,21 @@ display: block;
 /* quando a tela for maior ou igual a 768px */
 @media screen and (min-width: 768px) {
   .contaider{
-    margin-top:70%;
-    max-width: 70%;
-   }
+              margin-top:70%;
+              max-width: 70%;
+             }
    #sobre{
-     flex-direction: row;
-     flex-wrap: wrap;
-   }
+           flex-direction: row;
+           flex-wrap: wrap;
+         }
    #sobre, h3, p{
-     width: 100%;
-     text-align: center;
-   }
+                 width: 100%;
+                 text-align: center;
+               }
    #sobre .sobre{
-     width: 25%;
-     text-align: center;
-   }
+                   width: 25%;
+                   text-align: center;
+                 }
    header, footer{
 
              background-color: rgba(65,105,225);
@@ -248,24 +253,29 @@ display: block;
             height: 533;
            }
   .menu-opções{
-    position: absolute;
-   }
+                margin-left: 80px;
+                margin-right: 20px;
+                text-align: center;
+               }
   .menu-opções ul li{
-    display:inline;
-    margin-left: 
-   }
+                      display:inline;
+                      margin-left: 
+                     }
    #galeria .galeria{
-     width: 25%;
-     text-align: center;
-   }
+                     width: 25%;
+                     text-align: center;
+                   }
    #galeria{
-     flex-direction: row;
-     flex-wrap: wrap;
-   }
+             flex-direction: row;
+             flex-wrap: wrap;
+           }
    .imggaleria{
-     width: 50%;
-     display: inline;
-   }
+                   width: 50%;
+                   display: inline;
+                 }
+    .imglogo{
+      width: 280px;
+    }
 
 }
 
