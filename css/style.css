@@ -21,15 +21,16 @@ html{
              flex-direction: column;
             }
    footer{
-
-             background-color: rgba(65,105,225);
-             padding: 1%;
-             position: absolute;
-             display: flex;
-             align-items: center;
-             font-size: 1.5em;
-             width: 100%;
-             font-weight: bolder;}         
+              
+    background-color: rgba(65,105,225);
+    padding: 3%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bolder;
+    flex-direction: column;
+   }       
   
 
   .container{
@@ -37,7 +38,6 @@ html{
               width: 80%;
               margin-left:auto;
               margin-right:auto;
-              margin-top: 20%
             }
   .fundo{
           background-color: #e8f7fd;
@@ -200,11 +200,14 @@ float: left;
 .testepa{
 margin-left: 10px;
 }
+.testera{
+  float: right;
+}
 /* quando a tela for menor ou igual a 599px */
 
 @media screen and (max-width: 599px){
-  .containder{
-        margin-top:80%;
+  .container{
+        margin-top:70%;
             }
   .imgtexto{
         text-align: center;
@@ -215,9 +218,9 @@ margin-left: 10px;
  
 /* quando a tela for maior ou igual a 600px */
 @media screen and (min-width: 600px) {
-  .containder{
-        margin-top:100%;
-        max-width:70%;
+  .container{
+        margin-top:45%;
+        max-width:80%;
      }
   .imgtexto{
         width:100%;              }
@@ -226,9 +229,9 @@ margin-left: 10px;
 
 /* quando a tela for maior ou igual a 768px */
 @media screen and (min-width: 768px) {
-  .contaider{
-              margin-top:70%;
-              max-width: 70%;
+  .container{
+              margin-top:25%;
+              max-width: 80%;
              }
    #sobre{
            flex-direction: row;
