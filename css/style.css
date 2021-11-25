@@ -5,10 +5,17 @@ html{
   }
 
   body{
-
+              position: relative;
   	         background-color: #99ccff;
 
            }
+           a{
+             color:#99ccff;
+             text-decoration: none;
+           }
+           a:hover{
+            color:#82a6ca;
+          }
   header{
               
              background-color: rgba(65,105,225);
@@ -23,13 +30,19 @@ html{
    footer{
               
     background-color: rgba(65,105,225);
-    padding: 3%;
-    position: absolute;
+   /*  padding: ; */
+    /* position: absolute; */
     display: flex;
     align-items: center;
     font-size: 1.5em;
     font-weight: bolder;
-    flex-direction: column;
+  /*   bottom: 0;
+    margin-top: 100px;*/
+    height: 100px;
+   /* left: 0;
+    right: 0;*/
+    width: 100vw; 
+    /* flex-direction: column; */
    }       
   
 
@@ -54,7 +67,7 @@ html{
   input[type=text],select{
           width: 100%;
           padding: 12px 20px;
-          display: inline-block
+          display: inline-block;
           border: 1px solid #008080;
           border-radius: 5px;
           box-sizing: border-box;
@@ -176,9 +189,9 @@ figure{
   .titulos{
 
              text-align:center;
-             color: #000000
+             color: #000000;
              margin-top: 2%;
-             margin-bottom: 2%;
+             margin-bottom:2%;
 
               }
   .fixo{
@@ -245,11 +258,11 @@ margin-left: 10px;
                    width: 25%;
                    text-align: center;
                  }
-   header, footer{
+   header{
 
              background-color: rgba(65,105,225);
              flex-direction: row;
-             position: relative; 
+             
            }
   .imgtexto{
             width: 379;
@@ -262,7 +275,6 @@ margin-left: 10px;
                }
   .menu-opções ul li{
                       display:inline;
-                      margin-left: 
                      }
    #galeria .galeria{
                      width: 25%;
